@@ -80,11 +80,11 @@ const Navbar = () => {
            
 						</div>
 								<h1 className="ml-14 font-bold text-center items-center text-xl   cursor-pointer">
-									Pay<span className="text-blue-500">hawk</span>
+									Payhawk
 								</h1>
 							</div>
 							<div className="hidden md:block">
-								<div className="ml-10 flex items-baseline space-x-4">
+								<div className="m1-2 flex items-baseline space-x-2">
 									<Link
 										activeClass="Home"
 										to="home"
