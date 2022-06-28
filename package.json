@@ -6,8 +6,17 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.6.5",
+    "@popperjs/core": "2.4.4",
     "next": "latest",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.4.0",
+    "react-scroll": "^1.8.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4"
   }
 }
