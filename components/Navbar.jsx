@@ -7,9 +7,19 @@ import p from '../public/assets/projects/download (1).svg';
 import p1 from '../public/assets/projects/download (2).svg';
 import p2 from '../public/assets/projects/download (3).svg';
 import p3 from '../public/assets/projects/download (4).svg';
-import p4 from '../public/assets/projects/download.svg';
+
+// nav icon
+import nav1 from '../public/assets/navIcons/approval-flows.svg';
+import nav3 from '../public/assets/navIcons/integrations.svg';
+import nav4 from '../public/assets/navIcons/pre-accounting.svg';
+import nav6 from '../public/assets/navIcons/smart-cards.svg';
+import nav7 from '../public/assets/navIcons/subscriptions-drop-down-icon (2).svg';
+
+
 import { createPopper } from '@popperjs/core';
 const Navbar = () => {
+	
+	const [dropdownOpen, setdropdownOpen] = useState(false);
   const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
   const btnDropdownRef = React.createRef();
   const popoverDropdownRef = React.createRef();
@@ -37,7 +47,7 @@ const Navbar = () => {
 							<button
 								onClick={() => setIsOpen(!isOpen)}
 								type="button"
-								className="ml-3 bg-blue-600 inline-flex items-center justify-center p-2 rounded-md text-white  hover:bg-black focus:outline-none focus:ring-white"
+								className="ml-3  inline-flex items-center justify-center p-2 rounded-md text-black  hover:bg-black hover:text-white focus:outline-none focus:ring-white"
 								aria-controls="mobile-menu"
 								aria-expanded="false"
 							>
@@ -85,16 +95,103 @@ const Navbar = () => {
 							</div>
 							<div className="hidden md:block">
 								<div className="m1-2 flex items-baseline space-x-2">
-									<Link
-										activeClass="Home"
-										to="home"
-										smooth={true}
-										offset={50}
-										duration={500}
-										className="cursor-pointer text-blue-600 px-3 py-2 text-md"
-									>
-										Home
-									</Link>
+									 <div
+                            onClick={() => setdropdownOpen(!dropdownOpen)}
+                            class="overflow-hidden   h-8 flex justify-center items-center
+                            hover:cursor-pointer
+                            ">
+
+                          Toggle
+						  <svg class="-mr-1 mt-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </svg>
+                        </div>
+                        
+                        
+                        <div
+                            class={`${dropdownOpen ? `top-full opacity-100 visible` : 'top-[110%] invisible opacity-0'} absolute  z-40 w-[40%]  rounded border-[.5px] border-light bg-white py-5 shadow-card transition-all grid grid-cols-2`}>
+                            <a
+                                href="javascript:void(0)"
+                                class="block py-2 px-3 text-base  font-semibold text-body-color hover:bg-primary hover:bg-opacity-5 hover:text-primary"
+                            >
+								<div className=' rounded-full  inline-flex'>
+								<div className='w-10 h-10 flex justify-center items-center bg-gray-100 rounded-md'>
+								<Image className=' ' src={nav6}/> 
+								</div>
+							   <div className='w-full'>
+							     <p className='ml-2 text-[15px]'>Card</p>
+							     <p  className='ml-2 text-[10px]'>smart card.</p></div>
+								</div>
+							
+								
+                               
+                            </a>
+                            <a
+                                href="javascript:void(0)"
+                                class="block py-2 px-3 text-base  font-semibold text-body-color hover:bg-primary hover:bg-opacity-5 hover:text-primary"
+                            >
+								<div className=' rounded-full  inline-flex'>
+								<div className='w-10 h-10 flex justify-center items-center bg-gray-100 rounded-md'>
+								<Image className=' ' src={nav7}/> 
+								</div>
+							   <div className='w-full'>
+							     <p className='ml-2 text-[15px]'>Subcribation</p>
+							     <p  className='ml-2 text-[10px]'>Moinitir your company</p></div>
+								</div>
+							
+								
+                               
+                            </a>
+							<a
+                                href="javascript:void(0)"
+                                class="block py-2 px-3 text-base  font-semibold text-body-color hover:bg-primary hover:bg-opacity-5 hover:text-primary"
+                            >
+								<div className=' rounded-full  inline-flex'>
+								<div className='w-10 h-10 flex justify-center items-center bg-gray-100 rounded-md'>
+								<Image className=' ' src={nav4}/> 
+								</div>
+							   <div className='w-full'>
+							     <p className='ml-2 text-[15px]'>Bill payment</p>
+							     <p  className='ml-2 text-[10px]'>free payment.</p></div>
+								</div>
+							
+								
+                               
+                            </a>
+							<a
+                                href="javascript:void(0)"
+                                class="flex flex-wrap py-2 px-3 text-base  font-semibold text-body-color hover:bg-primary hover:bg-opacity-5 hover:text-primary"
+                            >
+								<div className=' rounded-full  inline-flex'>
+								<div className='w-10 h-10 flex justify-center items-center bg-gray-100 rounded-md'>
+								<Image className=' ' src={nav3}/> 
+								</div>
+							   <div className='w-full'>
+							     <p className='ml-2 text-[15px]'>Intergration</p>
+							     <p  className='ml-2 text-[10px]'>one click integrations</p></div>
+								</div>
+							
+								
+                               
+                            </a>
+							<a
+                                href="javascript:void(0)"
+                                class="inline-flex py-2 px-3 text-base  font-semibold text-body-color hover:bg-primary hover:bg-opacity-5 hover:text-primary"
+                            >
+								<div className=' rounded-full  inline-flex'>
+								<div className='w-10 h-10 flex justify-center items-center bg-gray-100 rounded-md'>
+								<Image className=' ' src={nav1}/> 
+								</div>
+							   <div className='w-full'>
+							     <p className='ml-2 text-[15px]'> Management</p>
+							     <p  className='ml-2 text-[10px]'>AP approvel</p></div>
+								</div>
+							
+								
+                               
+                            </a>
+                        </div>
+						
 									<Link
 										activeClass="services"
 										to="services"
@@ -241,7 +338,7 @@ const Navbar = () => {
 									duration={500}
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
-									Home
+									Toggle
 								</Link>
 								<Link
 									href="/services"

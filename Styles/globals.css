@@ -5,11 +5,4 @@
 html {
     scroll-behavior: smooth;
   }
-  
-  @layer base {
-    body {
-      @apply bg-[#000000] text-[#1f2937] tracking-wide
-    }
-  
-   
-  }
+ 
