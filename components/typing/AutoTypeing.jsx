@@ -1,5 +1,5 @@
 
-// import Typical from 'react-typical'
+import Typical from 'react-typical'
  
 
 const AutoTypeing = () => {
