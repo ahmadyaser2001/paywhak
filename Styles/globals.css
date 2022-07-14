@@ -1,8 +1,17 @@
+@font-face {
+  font-family: "nueaHass";
+  src: url("/public/fonts/NHaasGroteskTXPro-65Md.ttf") format("ttf");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth;
-  }
- 
+  scroll-behavior: smooth;
+  font-family: "nueaHass";
+}
+
+.bliking::after {
+  content: "|" text-green-300;
+}

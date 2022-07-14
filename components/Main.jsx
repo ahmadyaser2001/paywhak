@@ -1,15 +1,9 @@
 import React from 'react'
 import p4 from '../public/assets/card-home-hero.svg';
 
-import pbymileslogo from '../public/assets/icons/bymiles-logo.svg';
-import heuralogo from '../public/assets/icons/heura-logo.svg';
-import heycar from '../public/assets/icons/heycar-logo.svg';
-import luxair from '../public/assets/icons/luxair-logo.svg';
-import macpaw from '../public/assets/icons/macpaw-logo.svg';
-import wagstream from '../public/assets/icons/wagstream-logo.svg';
-
-import { Element } from "react-scroll";
+import Slider from '../components/typing/sliderIgm'
 import Image from 'next/image';
+import AutoTypeing from './typing/AutoTypeing';
 
 const Main = () => {
   return (
@@ -30,7 +24,7 @@ const Main = () => {
 	 Spending is easy.
 	 
 	 <div class=" font-bold">
-        <span class="text-green-600">Expenses</span>  Subscriptions
+       <p> <span class="text-green-600 duration-700"><AutoTypeing/></span>are not.</p>
         <p id="text" class="text-red-500"></p>
       </div>
 
@@ -56,9 +50,9 @@ const Main = () => {
         
          
       </div>
-	  {/* <div className=' container flex'>
-			<Image src={luxair}/>
-		 </div> */}
+	     <div className='bg-black'>
+       <Slider/>
+       </div>
     </div>
  
   )

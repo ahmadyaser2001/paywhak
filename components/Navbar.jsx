@@ -19,7 +19,8 @@ import nav7 from '../public/assets/navIcons/subscriptions-drop-down-icon (2).svg
 import { createPopper } from '@popperjs/core';
 const Navbar = () => {
 	
-	const [dropdownOpen, setdropdownOpen] = useState(false);
+  const [dropdownOpen, setdropdownOpen] = useState(false);
+  const [dropdownOpentwo, setdropdownOpenteo] = useState(false);
   const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
   const btnDropdownRef = React.createRef();
   const popoverDropdownRef = React.createRef();
@@ -89,7 +90,7 @@ const Navbar = () => {
 							</button>
            
 						</div>
-								<h1 className="ml-14 font-bold text-center items-center text-xl   cursor-pointer">
+								<h1 className="ml-13  mb-2 font-bold text-center items-center text-xl   cursor-pointer">
 									Payhawk
 								</h1>
 							</div>
@@ -101,7 +102,7 @@ const Navbar = () => {
                             hover:cursor-pointer
                             ">
 
-                          Toggle
+                             Product
 						  <svg class="-mr-1 mt-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
       </svg>
@@ -198,9 +199,9 @@ const Navbar = () => {
 										smooth={true}
 										offset={50}
 										duration={500}
-										className="cursor-pointer hover:text-blue-600 text-black  px-3 py-2"
+										className="cursor-pointer  text-[12px] hover:text-blue-600 text-black  px-3 py-2"
 									>
-										Services
+										Why Payhawk
 									</Link>
 									<Link
 										activeClass="work"
@@ -208,9 +209,9 @@ const Navbar = () => {
 										smooth={true}
 										offset={50}
 										duration={500}
-										className="cursor-pointer hover:text-blue-600 text-black px-3 py-2"
+										className="cursor-pointer  text-[12px] hover:text-blue-600 text-black px-3 py-2"
 									>
-										Projects
+										Resources
 									</Link>
 
 									<Link
@@ -219,9 +220,10 @@ const Navbar = () => {
 										smooth={true}
 										offset={50}
 										duration={500}
-										className="cursor-pointer hover:text-blue-600 text-black px-3 py-2"
+										className="cursor-pointer text-[12px] hover:text-blue-600 text-black px-3 py-2"
 									>
-										Clients
+										Customer Stories
+
 									</Link>
 
 									<Link
@@ -230,9 +232,9 @@ const Navbar = () => {
 										smooth={true}
 										offset={50}
 										duration={500}
-										className="cursor-pointer hover:text-blue-600 text-black px-3 py-2"
+										className="cursor-pointer text-[12px]  hover:text-blue-600 text-black px-3 py-2"
 									>
-										Contact
+										Pricing
 									</Link>
 								</div>
 							</div>
@@ -242,7 +244,10 @@ const Navbar = () => {
 									open account  |  <span className="">login</span>
 								</h1>
 							</div>
+
+							{/* Country dropdown*/}
               <div className="flex flex-wrap">
+				
         <div className="w-full sm:w-6/12 md:w-4/12 px-4">
           <div className="relative inline-flex align-middle w-full">
             <button

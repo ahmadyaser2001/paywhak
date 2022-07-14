@@ -15,7 +15,7 @@ import Image from 'next/image';
 
 const Busib = () => {
   return (
-    <div className=' bg-black'>
+    <div className=' bg-black pb-10'>
          <div className=" max-w-7xl pt-14 mx-auto text-center">
         <h1 className="text-2xl md:text-4xl Avenir font-semibold text-white">
         For modern businesses of any size        </h1>

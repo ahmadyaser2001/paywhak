@@ -1,5 +1,7 @@
 
 import React from 'react';
+import AutoTypeing1 from './typing/AutoTypeing1';
+import AutoTypeing2 from './typing/AutoTypeing2';
 
 const Dealing = () => {
   return (
@@ -16,7 +18,7 @@ const Dealing = () => {
             <p className='text-black  text-[20px] font-light  md:text-[38px]'><span className='text-green-800'>100% </span>employee satisfaction</p>
             <p className='text-black  text-[20px] font-light  md:text-[38px]'><span className='text-green-800'>95% </span>data entry removed</p>
              <p className='text-black  text-[20px] font-light  md:text-[38px]'><span className='text-green-800'>5 </span>days faster month closing</p>
-             <p className='text-black  text-[18px] font-light  md:text-[38px]'><span className='text-green-800'>€1,015 </span>typical savings per month for <span className='text-green-800'>Scale-Ups </span></p>
+             <p className='text-black  text-[18px] font-light  md:text-[38px] inline-flex'><span className='text-green-800 inline-flex '> $1000 </span>typical savings per month for <span className='text-green-800'>faster</span></p>
 
 
     </div>

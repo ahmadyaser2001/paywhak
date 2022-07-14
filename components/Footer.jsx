@@ -8,7 +8,7 @@ const Footer = () => {
         <div>
             <h2 class="mb-6 text-sm font-semibold text-black uppercase"> Use Cases
 </h2>
-            <ul class="text-gray-800">
+            <ul class="text-gray-800  text-sm">
                 <li class="mb-1">
                     <a href="#" class=" hover:underline">The Remote Employee
 </a>
@@ -30,7 +30,7 @@ const Footer = () => {
             <h2 class="my-6 text-sm font-semibold text-black uppercase">Product
 </h2>
 
-            <ul class="text-gray-800">
+            <ul class="text-gray-800  text-sm">
                 <li class="mb-1">
                     <a href="#" class=" hover:underline">Visa Company Cards
 </a>
@@ -67,7 +67,7 @@ const Footer = () => {
 
 </h2>
 
-            <ul class="text-gray-800">
+            <ul class="text-gray-800  text-sm">
                 <li class="mb-1">
                     <a href="#" class=" underline">Download for iPhone
 
@@ -82,7 +82,7 @@ const Footer = () => {
         </div>
         <div>
             <h2 class="mb-6 text-sm font-semibold text-black uppercase">Resources</h2>
-            <ul class="text-gray-800">
+            <ul class="text-gray-800 text-sm  text-sm">
                 <li class="mb-1">
                     <a href="#" class="hover:underline">Blog</a>
                 </li>
@@ -113,7 +113,7 @@ const Footer = () => {
             
 
             <h2 class="mb-6 text-sm font-semibold text-black uppercase">About</h2>
-            <ul class="text-gray-800">
+            <ul class="text-gray-800  text-sm">
                 <li class="mb-1">
                     <a href="#" class="hover:underline">Why Payhawk
 </a>
@@ -141,7 +141,7 @@ const Footer = () => {
         <div>
             <h2 class="mb-6 text-sm font-semibold text-black uppercase">        The latest from the blog
 </h2>
-            <ul class="text-gray-800">
+            <ul class="text-gray-800  text-sm">
                 <li class="mb-2">
                     <a href="#" class="hover:underline ">How people-first budget planning starts with cultures of trust.</a>
                 </li>
@@ -189,7 +189,7 @@ Key learnings from SaaStr Europa 2022: scaling your business and more</a>
 
  */}
             <h2 class="mb-6 text-sm font-semibold text-black uppercase">Contacts</h2>
-            <ul class="text-gray-800">
+            <ul class="text-gray-800  text-sm">
                 <li class="mb-4">
                     <p  class="hover:underline font-bold">London office</p>
                     <a href="#" class="hover:underline text-[10px]">

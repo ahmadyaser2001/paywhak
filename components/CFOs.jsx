@@ -5,7 +5,7 @@ const CFOs = () => {
     
 
 <div>
-<div class="container">
+<div class="container mt-8">
     <div className='text-center'>
         <h1 className='text-xl md:text-4xl mb-4 font-bold'>What CFOs often ask about
         </h1>

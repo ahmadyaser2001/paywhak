@@ -9,6 +9,7 @@ import Benefit from "../components/Benefit";
 import Testion from "../components/Testion";
 import CFOs from '../components/CFOs';
 import Footer from "../components/Footer";
+import Slider from '../components/typing/sliderIgm'
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
     <CFOs/>
     <Testion/>
     <Footer/>
+    {/* <Slider/> */}
     </div>
   )
 }

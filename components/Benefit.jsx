@@ -8,9 +8,9 @@ import p2 from '../public/assets/icons/crad icon/manage_icon.svg';
 const Benefit = () => {
   return (
   <>
-       
-<div className=' bg-gray-200 mb-10 py-10'>
-<div class=" bg-gray-50 ">
+       {/* Main */}
+<div className=' bg-gray-100  pb-4'>
+<div class="  ">
     <div className='flex items-center justify-center -mt-10 pt-8'>
         <h1 className='text-2xl md:text-4xl  font-bold'>How your business can benefit</h1>
     </div>
@@ -19,7 +19,7 @@ const Benefit = () => {
 
     <div class=" m-auto px-6  text-gray-500 md:px-12">
         
-        <div class="mt-8 grid border divide-x divide-y rounded-xl overflow-hidden sm:grid-cols-1 lg:divide-y-0 lg:grid-cols-3 xl:grid-cols-4">
+        <div class="mt-8 grid border divide-x divide-y rounded-xl overflow-hidden sm:grid-cols-1 lg:divide-y-0 lg:grid-cols-3 ">
             <div class="relative group bg-white transition hover:z-[1] hover:shadow-2xl">
                 <div class="relative p-8 space-y-8">
                     <Image src={p1} class="w-10" alt="burger illustration"/>
